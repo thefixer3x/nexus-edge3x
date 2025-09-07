@@ -63,8 +63,8 @@ export const ProductComparison: React.FC = () => {
   };
 
   // Get specification value for a product in a category
-  const getSpecValue = (product: any, category: string, specName: string) => {
-    const spec = product.specifications.find((s: any) => s.category === category && s.name === specName);
+  const getSpecValue = (product: Product, category: string, specName: string) => {
+    const spec = product.specifications.find((s: Product['specifications'][0]) => s.category === category && s.name === specName);
     return spec ? spec.value : '-';
   };
 

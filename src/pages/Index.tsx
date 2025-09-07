@@ -1,9 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { Navigate } from "react-router-dom";
+import LandingPage from './LandingPage';
 
 const Index = () => {
-  return <Navigate to="/products" replace />;
+  return <LandingPage />;
 };
 
 export default Index;

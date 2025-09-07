@@ -17,10 +17,12 @@ export const SMENavbar: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-seftec-purple to-seftec-mint rounded-lg flex items-center justify-center shadow-lg">
-                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M13 3L4 14h7v7l9-11h-7V3z"/>
-                </svg>
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center shadow-lg">
+                <img 
+                  src="/seftec-logo.svg" 
+                  alt="Seftec Logo" 
+                  className="w-8 h-8"
+                />
               </div>
               <div className="hidden md:block">
                 <h1 className="text-xl font-bold font-heading text-sme-neutral-900">

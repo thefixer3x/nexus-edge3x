@@ -5,6 +5,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { OrdersList } from '@/components/OrdersList';
 import { Wishlist } from '@/components/Wishlist';
 import { EditProfileForm } from '@/components/EditProfileForm';
+import { SocialConnections } from '@/components/SocialConnectionsPreview';
 
 export function UserProfile() {
   const { user } = useAuth();
@@ -25,6 +26,7 @@ export function UserProfile() {
           <h1 className="text-3xl font-bold">{user.name}</h1>
           <p className="text-muted-foreground">{user.email}</p>
           <Button variant="outline" className="mt-2" onClick={() => {/* Open edit modal */}}>
+            Edit Profile
           </Button>
         </div>
       </div>
@@ -33,6 +35,7 @@ export function UserProfile() {
         <TabsList>
           <TabsTrigger value="orders">Orders</TabsTrigger>
           <TabsTrigger value="wishlist">Wishlist</TabsTrigger>
+          <TabsTrigger value="social">Social</TabsTrigger>
           <TabsTrigger value="settings">Settings</TabsTrigger>
         </TabsList>
         <TabsContent value="orders">
@@ -40,6 +43,9 @@ export function UserProfile() {
         </TabsContent>
         <TabsContent value="wishlist">
           <Wishlist userId={user.id} />
+        </TabsContent>
+        <TabsContent value="social">
+          <SocialConnections />
         </TabsContent>
         <TabsContent value="settings">
           <EditProfileForm user={user} />

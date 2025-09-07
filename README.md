@@ -1,6 +1,6 @@
-# Nexus Edge – AI-Assisted Marketplace
+# Seftec.Store – AI-Assisted Business Marketplace
 
-A modern, AI-powered marketplace built with TypeScript, React, Tailwind CSS, Vite, and shadcn/ui. Features include product recommendations, natural language search, chat-based support, and a premium, accessible UI.
+A modern, AI-powered business marketplace built with TypeScript, React, Tailwind CSS, Vite, and shadcn/ui. Features include product recommendations, natural language search, chat-based support, and a premium, accessible UI. This platform is part of the Seftec ecosystem, specifically designed for business customers.
 
 ---
 
